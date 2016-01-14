@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    {% stylesheets 'public/css/*' %}
+
+    <link rel="stylesheet" type="text/css" charset="UTF-8" media="all" href="{{ asset_url }}"/>
+
+    {% endstylesheets %}
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">Página contacto</li>
+                <li><a href="#">Departamento 1</a></li>
+                <li><a href="#">Departamento 2</a></li>
+                <li><a href="#">Departamento 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="callout large primary">
+        <div class="row column text-center">
+            
+            {% block body %}
+
+            {% endblock %}
+    
+        </div>
+    </div>
+
+    <div class="row medium-8 large-7 columns">
+        <div class="blog-post">
+            <h3>Awesome blog post title <small>3/6/2015</small></h3>
+            <img class="thumbnail" src="http://placehold.it/850x350">
+            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+            <div class="callout">
+                <ul class="menu simple">
+                    <li><a href="#">Author: Mike Mikers</a></li>
+                    <li><a href="#">Comments: 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-post">
+            <h3>Awesome blog post title <small>3/6/2015</small></h3>
+            <img class="thumbnail" src="http://placehold.it/850x350">
+            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+            <div class="callout">
+                <ul class="menu simple">
+                    <li><a href="#">Author: Mike Mikers</a></li>
+                    <li><a href="#">Comments: 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-post">
+            <h3>Awesome blog post title <small>3/6/2015</small></h3>
+            <img class="thumbnail" src="http://placehold.it/850x350">
+            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+            <div class="callout">
+                <ul class="menu simple">
+                    <li><a href="#">Author: Mike Mikers</a></li>
+                    <li><a href="#">Comments: 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-post">
+            <h3>Awesome blog post title <small>3/6/2015</small></h3>
+            <img class="thumbnail" src="http://placehold.it/850x350">
+            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+            <div class="callout">
+                <ul class="menu simple">
+                    <li><a href="#">Author: Mike Mikers</a></li>
+                    <li><a href="#">Comments: 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+    {% block footer %}{% endblock %}
+
+    </div>
+    {% block javascripts %}
+        {% javascripts 'public/js/*' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        <script>
+            $(document).foundation();
+        </script>
+    {% endblock %}
+
+
+    
+</body>
+</html>

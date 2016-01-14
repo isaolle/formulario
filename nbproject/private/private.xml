@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/src/AppBundle/Controller/DefaultController.php</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/src/AppBundle/Resources/views/default/principal.html.twig</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/app/config/config.yml</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/app/AppKernel.php</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/app/Resources/views/base.html.twig</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/app/config/parameters.yml</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/src/AppBundle/Entity/DepartamentoGrupotrabajo.php</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/src/AppBundle/Form/DepartamentoType.php</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/src/AppBundle/Form/GrupotrabajoType.php</file>
+            <file>file:/E:/Instalaciones/xampp/htdocs/formularioSymfony/src/AppBundle/Resources/views/default/formDepartamento.html.twig</file>
+        </group>
+    </open-files>
+</project-private>

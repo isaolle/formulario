@@ -1,0 +1,21 @@
+{#{% spaceless %}#}
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    <h1>Número</h1>
+    <h2 class="subheader">{{ numero }}</h2>
+
+{% endblock %}
+
+{% block footer %}
+    <div class="blog-post">
+        <div class="callout">
+            <ul class="menu simple">
+                <li><a href="#"> Contacto: {{ correo_contacto }}</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+{% endblock %}

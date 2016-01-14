@@ -1,0 +1,47 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Departamento
+ *
+ * @ORM\Table(name="departamento")
+ * @ORM\Entity
+ */
+class Departamento
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nombre", type="string", length=250, nullable=false)
+     */
+    private $nombre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="correo", type="string", length=250, nullable=false)
+     */
+    private $correo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="descripcion", type="text", length=65535, nullable=false)
+     */
+    private $descripcion;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="idDepartamento", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $iddepartamento;
+
+
+}
+

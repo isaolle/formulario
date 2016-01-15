@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Departamento
@@ -22,6 +23,10 @@ class Departamento
     /**
      * @var string
      *
+	 * @Assert\Email(
+     *     message = "El correo '{{ value }}' no es un correo electrónico válido.",
+     *     checkMX = false
+     * )
      * @ORM\Column(name="correo", type="string", length=250, nullable=false)
      */
     private $correo;

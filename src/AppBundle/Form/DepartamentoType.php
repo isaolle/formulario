@@ -16,7 +16,7 @@ class DepartamentoType extends AbstractType
     {
         $builder
             ->add('nombre', TextType::class)
-            ->add('correo', TextType::class)
+            ->add('correo', EmailType::class)
             ->add('descripcion', TextType::class)
         ;
     }
@@ -27,7 +27,7 @@ class DepartamentoType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\Departamento'
+            'data_class' => 'AppBundle\Entity\Departamento',
         ));
     }
 }
